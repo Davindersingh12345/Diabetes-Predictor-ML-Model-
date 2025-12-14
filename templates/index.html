@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diabetes Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Diabetes Prediction System</h2>
+
+    <form action="/predict" method="POST">
+
+        <label>Age</label>
+        <input type="number" step="0.1" name="Age" required>
+
+        <label>BMI</label>
+        <input type="number" step="0.1" name="BMI" required>
+
+        <label>Physical Activity</label>
+        <select name="Physical_Activity">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select>
+
+        <label>Smoked</label>
+        <select name="Smoked">
+            <option value="0">Non Smoker</option>
+            <option value="1">Smoker</option>
+        </select>
+
+        <label>General Health</label>
+        <select name="GeneralHealth">
+            <option value="Fair">Fair</option>
+            <option value="Good">Good</option>
+            <option value="Poor">Poor</option>
+            <option value="VeryGood">Very Good</option>
+        </select>
+
+        <label>Gender</label>
+        <select name="Gender">
+            <option value="0">Female</option>
+            <option value="1">Male</option>
+        </select>
+
+        <label>High Blood Pressure</label>
+        <select name="HighBP">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select>
+
+        
+
+        <button type="submit">Predict</button>
+    </form>
+</div>
+
+</body>
+</html>

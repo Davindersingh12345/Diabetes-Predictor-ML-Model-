@@ -1,0 +1,155 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    background-color: #ffffff;
+    padding: 40px 35px;
+    border-radius: 15px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    width: 500px;
+    max-width: 95%;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Fade-in */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+}
+
+/* Form two-column grid */
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 15px;
+}
+
+label {
+    font-weight: 500;
+    color: #2c3e50;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #bdc3c7;
+    outline: none;
+    transition: all 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #2980b9;
+    box-shadow: 0 0 6px rgba(41,128,185,0.3);
+}
+
+/* Full width button (spanning 2 columns) */
+button {
+    grid-column: span 2;
+    margin-top: 15px;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #2980b9, #6dd5fa);
+    transition: all 0.3s;
+}
+
+button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Result Box */
+.result-box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    width: 450px;
+    max-width: 95%;
+    text-align: center;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.result-box h2 {
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+.result-badge {
+    font-weight: 600;
+    font-size: 20px;
+    padding: 12px 20px;
+    border-radius: 25px;
+    display: inline-block;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.result-badge.diabetic {
+    background-color: #ffcccc;
+    color: #c0392b;
+}
+
+.result-badge.non-diabetic {
+    background-color: #c8f7c5;
+    color: #27ae60;
+}
+
+/* Back Button */
+a.back-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    background: #2980b9;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+a.back-btn:hover {
+    background: #1c5980;
+    transform: scale(1.02);
+}
+
+/* Responsive layout */
+@media screen and (max-width: 600px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    button {
+        grid-column: span 1;
+    }
+}

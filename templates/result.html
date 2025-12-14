@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="result-box">
+    <h2>Prediction Result</h2>
+
+    {% if prediction == "Diabetic" %}
+        <h3 style="color: red;">You are likely Diabetic</h3>
+    {% else %}
+        <h3 style="color: green;">You are Non-Diabetic</h3>
+    {% endif %}
+
+    <a href="/" class="back-btn">Go Back</a>
+</div>
+
+</body>
+</html>
