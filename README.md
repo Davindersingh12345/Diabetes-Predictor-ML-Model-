@@ -1,0 +1,1 @@
+A machine learning–based web application that predicts diabetes risk using health and lifestyle data from the BRFSS (CDC) dataset. Multiple models were trained and compared, with Random Forest selected as the best performer. The system is deployed using Flask with a clean HTML/CSS frontend.
